@@ -1,0 +1,90 @@
+*{
+    font-family:sans-serif;
+    /* margin: 0;
+    padding: 0;
+    border: 0; */
+    color: #f3f3f3;
+}
+
+
+body{
+    background-color: #1b1b32;
+}
+body::after{
+    content: '';
+    background: url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    opacity: 0.3;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;    
+}
+#title{
+    text-align: center;
+    margin: 50px 0 10px 0;
+}
+
+#description{
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+#survey-form{
+
+    display: block;
+    background-color:  rgba(38, 38, 70, 0.8);
+    margin: 20px auto 20px auto;
+    padding: 30px 30px 30px 30px;
+    border-radius: 5px;
+    width: 50%;
+}
+
+
+#name,
+#email, 
+#number,
+#dropdown,
+#radio-box,
+#fcc-feature,
+#improved,
+#text-area{
+    margin: 10px 0 10px 0;
+    width: 95%;
+    padding: 5px;
+    border-radius: 5px;
+    color: black;
+}
+
+#radio-box, #improved{
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+#submit{
+    padding: 7px 40px 7px 40px;
+    width: 95%;
+    background-color: rgb(15, 124, 88);
+    height: 30px;
+    border-radius: 3px;
+   
+}
+
+@media (max-width:900px) {
+    #survey-form{
+        width:60%;
+    }
+}
+
+@media (max-width:750px) {
+    #survey-form{
+        width:70%;
+    }
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <title>FCC:Survey Form</title>
+</head>
+<body>
+    <h1 id = "title">freeCodeCamp Survey Form</h1>
+    <p id = "description">Thank you for taking the time to help us improve the platform</p>
+    <form id = "survey-form">
+        <label id = "name-label" for = "name">Name</label><br>
+        <input type = "text" id = "name" name = "name" placeholder = "Enter your name" required><br>
+
+        <label id = "email-label" for = "email">Email</label><br>
+        <input type = "email" id = "email" name = "email" placeholder = "Enter your Email" required><br>
+
+        <label id = "number-label" for = "number">Age (optional)</label><br>
+        <input type = "number" id = "number" name = "number" min = 1 max = 100 placeholder = "Age"><br>
+
+        <label id = "drop-down" for = "dropbox">Which option best describes your current role?</label><br>
+        <select id = "dropdown">
+            <option value = "" selected>Select current role</option>
+            <option value = "student">Student</option>
+            <option value = "full-time-job">Full Time Job</option>
+            <option value = "full-time-learner">Full Time Learner</option>
+            <option value = "prefer-not-to-say">Prefer Not To Say</option>
+            <option value = "other">Other</option>
+        </select><br>
+
+        <label id = "radio" for = "radio-box">Would you recommend freeCodeCamp to a friend?</label><br>
+        <div id = "radio-box">
+            <input id = "definitely" type = "radio" name = "radio-box" value = "Definitely" checked>
+            <label for = "defintely">Definitely</label><br>
+
+            <input id = "maybe" type = "radio" name = "radio-box" value = "Maybe">
+            <label for = "maybe">Maybe</label><br>
+
+            <input id = "notsure" type = "radio" name = "radio-box" value = "Not sure">
+            <label for = "notsure">Not sure</label><br>
+        </div>
+
+        <label id = "feature" for = "fcc-feature">What is your favorite feature of freeCodeCamp?</label><br>
+        <select id = "fcc-feature">
+            <option value = "" selected>Select an option</option>
+            <option value = "challenges">Challenges</option>
+            <option value = "projects">Projects</option>
+            <option value = "communtiy">Community</option>
+            <option value = "open-source">Open Source</option>
+            <!-- <option value = "challenges">Challenges</option>
+            <option value = "open-source-community">Open Source Community</option>
+            <option value = "gitter-help-rooms">Gitter help rooms</option>
+            <option value = "videos">Videos</option>
+            <option value = "city-meetups">City Meetups</option>
+            <option value = "wiki">Wiki</option>
+            <option value = "forum">Forum</option>
+            <option value = "additionalcourses">Additional Courses</option> -->
+        </select><br>
+        
+        <label for = "improved" id = "imp">What would you like to see improved? (Check all that apply)</label><br>
+        <div id = "improved">
+            <input id = "front-end" type = "checkbox" name = "check-box" value = "Front-end Projects" checked>
+            <label for = "front-end">Front-end Projects</label><br>
+
+            <input id = "back-end" type = "checkbox" name = "check-box" value = "Back-end Projects">
+            <label for = "back-end`">Back-end Projects</label><br>
+
+            <input id = "data-visual" type = "checkbox" name = "check-box" value = "Data Visualization">
+            <label for = "data-visual">Data Visualization</label><br>
+
+            <input id = "challengess" type = "checkbox" name = "check-box" value = "Challenges">
+            <label for = "challengess">Challenges</label><br>
+
+            <input id = "open_source" type = "checkbox" name = "check-box" value = "Open Source Community">
+            <label for = "open_source">Open Source Community</label><br>
+
+            <input id = "gitter-help-rooms" type = "checkbox" name = "check-box" value = "Gitter help rooms">
+            <label for = "gitter-help-rooms">Gitter help rooms</label><br>
+
+            <input id = "videos" type = "checkbox" name = "check-box" value = "Videos">
+            <label for = "videos">Videos</label><br>
+
+            <input id = "city-meetups" type = "checkbox" name = "check-box" value = "City Meetups">
+            <label for = "city-meetups">City Meetups</label><br>
+
+            <input id = "wiki" type = "checkbox" name = "check-box" value = "Wiki">
+            <label for = "wiki">Wiki</label><br>
+
+            <input id = "forum" type = "checkbox" name = "check-box" value = "Forum">
+            <label for = "forum">Forum</label><br>
+
+            <input id = "additionalcourses" type = "checkbox" name = "check-box" value = "Additional Courses">
+            <label for = "additionalcourses">Additional Courses</label><br>
+
+        </div>
+
+        <label for = "text-area" id = "txt">Any comments or suggestions?</label><br>
+        <textarea id = "text-area">Enter your comment here...</textarea><br>
+
+        <input type = "submit" id = "submit" name = "Submit">
+
+    </form>
+</body>
+</html>
